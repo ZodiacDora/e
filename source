@@ -1,0 +1,122 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Arix Hub", "BloodTheme")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+local MainSection = Main:NewSection("Made By GDoggs_Kai")
+
+MainSection:NewButton("Infinite Yield", "FE ADMIN", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewButton("Keyboard", "For Mobile", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
+
+MainSection:NewButton("Fly", "Flying", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/thWmEGwM'),true))()
+end)
+
+MainSection:NewToggle("SuperMan", "Superman here?", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120 
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 
+    end
+end)
+
+
+
+
+--Local Player
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Speed", "SPEED!", 200, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Rocket?", 490, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Noclip", "Go Through Wall", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/9LBsfRkD'),true))()
+end)
+PlayerSection:NewButton("Reset WS/JP", "Reset to defaults", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+PlayerSection:NewButton("Inf Jump", "Jump Forever", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/bC97eAyR'),true))()
+end)
+PlayerSection:NewToggle("FOV", "Changes the FOV", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 70
+    end
+end)
+PlayerSection:NewButton("Teleport Gui", "Tp to players", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+PlayerSection:NewButton("Darkrai", "Free Animations", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/eXBybk5M'),true))()
+end)
+--Visual
+local Visual = Window:NewTab("Visual")
+local VisualSection = Visual:NewSection("Visual")
+VisualSection:NewButton("ESP", "Press b to turn on and off", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/c1jUryVm'),true))()
+end)
+VisualSection:NewButton("Aimbot", "For Shooting games", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/WzMcF8Mc'),true))()
+end)
+--Others
+local Others = Window:NewTab("Others")
+local OthersSection = Others:NewSection("Others")
+
+OthersSection:NewButton("OwlHub", "For Arsenal", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/GjAS01GE'),true))()
+end)
+OthersSection:NewButton("Chat Spoofer", "Chat for others", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+OthersSection:NewButton("Vape v4", "Work in almost every game", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/loadstring'),true))()
+end)
+OthersSection:NewButton("Fov Changer", "Changes FOV", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/VBn4XRju'),true))()
+end)
+OthersSection:NewButton("Auto Rap battles", "For Auto Rap battles only", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/e8ek6Jrk'),true))()
+end)
+OthersSection:NewButton("Build a Boat", "Fun", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/ATDw0bB0'),true))()
+end)
+OthersSection:NewButton("Piggy Fast Win", "can speedrun", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/geEppzZX'),true))()
+end)
+OthersSection:NewButton("Rainbow Friends", "Auto Win", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/KVPhwMCM'),true))()
+end)
+OthersSection:NewButton("Jh nn v20", "Bedwars", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/d2nyuGuW'),true))()
+end)
+
+OthersSection:NewButton("Vhub", ":)", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Quan8008/V-Hub/Master/Launch-Screen.lua'),true))()
+end)
+PlayerSection:NewButton("Auto Clicker", "press v to active", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/2StReQKt'),true))()
+end)
+--Credit
+local Credit = Window:NewTab("Credit")
+local CreditSection = Credit:NewSection("Credit")
+local CreditSection = Credit:NewSection("Owner:GDoggs_Kai, Tutorial:1 F0")
+local CreditSection = Credit:NewSection("Discord Server:Zodiac Sign Club")
+local CreditSection = Credit:NewSection("Link:discord.io/ZodiacClub")
